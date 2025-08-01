@@ -229,12 +229,41 @@ h3 { font-size: var(--fs-h3) }
     margin: 0 auto;
 }
 
+/* programming languages */
+
 .language__title{
     text-align: left;
 }
 
 .languages li::marker{
     color: var(--clr-accent);
+}
+
+/* my-cv */
+
+.my__cv{
+    text-decoration: none;
+    display:inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    border-radius: 10px;
+    animation:bgFade 4s infinite alternate;
+
+}
+
+@keyframes bgFade{
+    0%{
+        background-color: #1e90ff;
+    }
+    50%{
+        background-color: #32cd32;
+    }
+    100%{
+        background-color: #ff4500;
+    }
 }
 
 @media (min-width: 800px) {
@@ -379,11 +408,15 @@ h4{
 
 .footer {
     background: #111;
-    color: var(--clr-accent);
-    text-align: center;
+    color: var(--clr-light);
     padding: 2.5em 0;
     font-size: var(--fs-h3);
 
+}
+
+.contact__info{
+    text-align: center;
+    margin-top: 0;
 }
 
 .footer a { 
