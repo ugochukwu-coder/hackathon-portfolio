@@ -59,10 +59,7 @@ img {
 
 strong { font-weight: var(--fw-bold) }
 
-:focus {
-    outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
-}
+
 
 /* Buttons */
 
@@ -195,7 +192,6 @@ h3 { font-size: var(--fs-h3) }
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
-    /* background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
     margin-top: -20px;
@@ -220,11 +216,11 @@ h3 { font-size: var(--fs-h3) }
     opacity: 0.25;
 }
 
-.services {
+.education {
     margin-bottom: 4em;
 }
 
-.service {
+.school {
     max-width: 500px;
     margin: 0 auto;
 }
@@ -254,9 +250,14 @@ h3 { font-size: var(--fs-h3) }
 
 }
 
+.my__cv:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
 @keyframes bgFade{
     0%{
-        background-color: #1e90ff;
+        background-color: #ffffff;
     }
     50%{
         background-color: #32cd32;
@@ -266,15 +267,17 @@ h3 { font-size: var(--fs-h3) }
     }
 }
 
+
+
 @media (min-width: 800px) {
-    .services {
+    .education {
         display: flex;
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
     
-    .service + .service {
+    .school + .school {
         margin-left: 2em;
     }
 }
@@ -329,7 +332,7 @@ h3 { font-size: var(--fs-h3) }
     }
 }
 
-/* My Work */
+/* My project */
 
 h4{
   font-size: 2rem;
@@ -409,15 +412,9 @@ h4{
 .footer {
     background: #111;
     color: var(--clr-light);
-    padding: 2.5em 0;
-    font-size: var(--fs-h3);
-
+    font-size: var(--fs-h3);    
 }
 
-.contact__info{
-    text-align: center;
-    margin-top: 0;
-}
 
 .footer a { 
     color: inherit;
@@ -437,6 +434,19 @@ h4{
     text-decoration: underline;
 }
 
+.contact__information{
+    margin: 0 auto;
+    padding: 3em;
+    display: flex;
+    align-content: center;
+}
+
+
+.contact__info{
+    text-align: center;
+    margin-top: 0;
+}
+
 .social-list {
     list-style: none;
     display: flex;
@@ -454,6 +464,58 @@ h4{
     
 }
 
+.fas, .fab{
+    font-size: 3rem;
+}
+
+/* form */
+form {
+      max-width: 25rem;
+      margin: auto;
+      font-size: medium;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.63em;
+      margin-top: 0.63em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: border 0.3s, background-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: dodgerblue;
+      background-color: #f0f8ff;
+      outline: none;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 0.94em 1.25em;
+      background-color: dodgerblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #007acc;
+    }
+
+@media (max-width:800px) {
+    .contact__information{
+      flex-direction: column;
+    }
+
+    .social__media{
+        margin-bottom: 1.5em;
+    }
+
+}
+
+    
 
 /* Individual portfolio item styles */
 
@@ -487,6 +549,7 @@ h4{
       column-gap: 30px;
     }
 
+ }
 }
 
 
@@ -498,5 +561,4 @@ h4{
   .portfolio__img{
     max-width: 100%;
   }
-
 }
