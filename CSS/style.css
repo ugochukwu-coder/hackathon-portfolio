@@ -469,7 +469,7 @@ h4{
 }
 
 /* form */
-form {
+.contact__form {
       max-width: 25rem;
       margin: auto;
       font-size: medium;
