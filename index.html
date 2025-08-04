@@ -205,18 +205,18 @@
                 </div>
 
                 <!-- form -->
-                <form action="mailto:gentleonlink@gmail.com" method="post" enctype="text/plain" class="contact__form">
+                <form action="https://formsubmit.co/gentleonlink@gmail.com" method="POST" class="contact__form">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Your name" required>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Your email" required>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
 
                     <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" placeholder="Your phone number" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
 
                     <label for="message">Message:</label>
-                    <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
 
                     <button type="submit">Send Message</button>
                 </form>
